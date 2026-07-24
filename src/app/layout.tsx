@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   verification: {
     // ⚠️ PLACEHOLDER — paste the content value Google Search Console gives you
     // (Settings → Ownership verification → HTML tag method), then remove this comment.
-    // google: "your-search-console-verification-code",
+    google: "N-RyIHAdGB_ncqiSXNV18GRc-05LGmMviUVyQWfa3cY",
   },
   openGraph: {
     type: "website",
