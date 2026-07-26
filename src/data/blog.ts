@@ -58,4 +58,55 @@ export const blogPosts: BlogPost[] = [
       "None of this is exotic — it's mostly discipline about what gets added to a page and when it loads. But it's the difference between a site that scores well in a lab test and one that actually feels fast to someone on a 3G connection in a city outside the main metros, which is a real and large part of the audience for a lot of our clients' sites.",
     ],
   },
+  {
+    slug: "cost-to-build-a-saas-mvp-2026",
+    title: "How Much Does It Cost to Build a SaaS MVP in 2026?",
+    excerpt:
+      "A realistic USD breakdown for founders scoping their first version — and where the budget actually goes.",
+    date: "July 2026",
+    readTime: "6 min read",
+    tag: "pricing",
+    content: [
+      "Every founder asks some version of the same question before writing a single line of a spec: what's this actually going to cost? The honest answer is that it depends entirely on how much of the product is genuinely 'minimum' versus how much has quietly turned into a wishlist — and most of the budget conversations we have end up being about scope, not rate.",
+      "A true MVP — one core workflow, authentication, a database, and a clean UI around it — typically lands in the low-to-mid thousands of dollars when built on a modern stack like Next.js with a managed database and auth provider rather than custom-built infrastructure. The cost driver isn't the framework, it's how many edge cases and secondary features get pulled into 'version one'.",
+      "Where budgets actually go: roughly a third into the core data model and backend logic, a third into the UI and the interactions that make it feel like a real product rather than a form, and the remainder into auth, payments (if applicable), and deployment. Skipping a design system at this stage, which we've written about before, is the single most common way early costs balloon later.",
+      "The features founders assume are 'small' are usually the ones that aren't: real-time updates, granular permissions, multi-tenant data isolation, and billing all sound like a checkbox but each carries real engineering weight. Naming these clearly during scoping — even if the answer is 'not in v1' — is what keeps a fixed quote fixed.",
+      "The other lever is speed to a testable product. We default new builds to a modern, server-rendered stack specifically because it cuts weeks off the path from spec to something real users can click through, which matters more for an MVP than almost any other consideration — a technically impressive but six-month-late MVP has already lost the point of being minimum.",
+      "If you're scoping an MVP right now, the most useful exercise isn't listing features — it's listing the one workflow a user has to complete for the product to have proven anything, and building only that, well.",
+    ],
+  },
+  {
+    slug: "ecommerce-website-cost-uk-small-business",
+    title: "What Does an E-commerce Website Actually Cost for a UK Small Business?",
+    excerpt:
+      "Beyond the build fee — hosting, payment fees, and the GDPR basics that come with selling online in the UK.",
+    date: "July 2026",
+    readTime: "6 min read",
+    tag: "pricing",
+    content: [
+      "Most UK small business owners pricing out an e-commerce site are really pricing out two different things without realising it: the one-off cost of the build, and the ongoing costs that come with actually running an online shop. Both matter, and quotes that only mention the first one tend to cause surprises later.",
+      "The build itself — product catalogue, cart, and a proper checkout — is a well-scoped, fixed-cost project when it's built on established e-commerce tooling rather than something custom from scratch. What changes the number is catalogue size and whether inventory needs to sync with an existing till or stock system many small retailers already run.",
+      "The ongoing costs that catch people out: payment processor fees (typically a small percentage plus a fixed fee per transaction), hosting, and any subscription for the e-commerce platform itself if it isn't self-hosted. None of these are large individually, but they belong in the same conversation as the build price, not a surprise in month two.",
+      "GDPR is the other piece that's specifically a UK/EU concern and worth getting right from day one rather than retrofitting: a clear cookie consent banner, a privacy policy that actually reflects what data is collected at checkout, and not storing more customer data than the business needs. It's not complicated to build in from the start — it's expensive to bolt on after a customer complaint.",
+      "Performance matters more for e-commerce than almost any other site type, because slow product pages measurably cost sales — we've written before about what actually moves the needle on load times, and for a shop specifically, image weight on product galleries is usually the single biggest lever.",
+      "For a small UK business, the realistic path is a fixed-quote build scoped tightly to the actual product range at launch, with room to add categories later — not a large, all-features-included build that delays getting the shop live and earning.",
+    ],
+  },
+  {
+    slug: "bilingual-arabic-english-website-development-gulf",
+    title: "Building Bilingual Arabic–English Websites for Gulf Businesses",
+    excerpt:
+      "RTL layout, trust signals, and what actually goes into a proper Arabic/English site — not just a translated homepage.",
+    date: "July 2026",
+    readTime: "6 min read",
+    tag: "engineering",
+    content: [
+      "A genuinely bilingual site for a business in Saudi Arabia, the UAE, or elsewhere in the Gulf is a different build to an English site with a translated version bolted on — and it shows quickly to visitors when it's the latter. The two languages need to be treated as first-class from the project's structure, not as a translation pass at the end.",
+      "The technical core of this is right-to-left (RTL) layout support. Arabic doesn't just need mirrored text — navigation, icons, form fields, and spacing all need to flip direction correctly, and this has to be built into the component layer from the start rather than patched with a handful of CSS overrides once the English site is 'done'.",
+      "Typography is the other detail that's easy to get wrong: Arabic script needs its own font choice and line-height tuning, since a font optimised for Latin characters often renders Arabic text cramped or uneven. Getting this right is a small early decision that has an outsized effect on how professional the site feels to an Arabic-reading visitor.",
+      "Content-wise, this isn't a literal translation exercise — pricing, contact expectations, and even the tone of the copy shift for a Gulf business audience, where trust signals like clear company information, local contact routes (WhatsApp is heavily used across the region), and professional Arabic copywriting matter more than a word-for-word English mirror.",
+      "There's also a growing business context worth building for directly: Saudi Arabia's Vision 2030 push has meaningfully increased the number of local businesses digitising for the first time, many of whom specifically want a site that reads as credible to both Arabic-first and English-first customers rather than favouring one.",
+      "Done properly, a bilingual build costs somewhat more than a single-language site — mainly in design and content time, not engineering complexity — but it opens a business to an audience a translated-afterthought site never quite convinces.",
+    ],
+  },
 ];

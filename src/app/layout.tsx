@@ -32,8 +32,6 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   verification: {
-    // ⚠️ PLACEHOLDER — paste the content value Google Search Console gives you
-    // (Settings → Ownership verification → HTML tag method), then remove this comment.
     google: "N-RyIHAdGB_ncqiSXNV18GRc-05LGmMviUVyQWfa3cY",
   },
   openGraph: {
