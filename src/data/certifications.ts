@@ -5,25 +5,25 @@ export const certifications = [
     title: "Web Development",
     issuer: "Professional Certification",
     // TODO: swap in the exact issuing body / platform name if different.
-    year: "",
+    year: "2022",
     tag: "web",
   },
   {
     title: "Advanced Python",
     issuer: "NAVTTC",
-    year: "",
+    year: "2022",
     tag: "code",
   },
   {
     title: "Graphic Designing",
     issuer: "LearnVern",
-    year: "",
+    year: "2022",
     tag: "design",
   },
   {
     title: "Introduction to Machine Learning",
     issuer: "AWS",
-    year: "",
+    year: "2023",
     tag: "ai",
   },
 ];

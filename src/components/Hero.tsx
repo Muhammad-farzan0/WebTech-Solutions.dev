@@ -90,7 +90,7 @@ export function Hero() {
             className="mt-9 flex flex-wrap items-center gap-4"
           >
             <a
-              href="#contact"
+              href="/contact"
               className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-navy-900 dark:bg-sky-400 text-white dark:text-navy-950 font-semibold hover:bg-blue-600 dark:hover:bg-sky-300 transition-all hover:scale-[1.03]"
             >
               Start a project

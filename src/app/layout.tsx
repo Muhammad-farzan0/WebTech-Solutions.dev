@@ -75,7 +75,7 @@ const jsonLd = {
     addressCountry: "PK",
   },
   areaServed: "Worldwide",
-  email: "hello@webtechsolutions.dev",
+  email: "muhammadfarzan58@gmail.com",
   sameAs: [],
   serviceType: [
     "Web Development",

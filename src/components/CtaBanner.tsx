@@ -16,7 +16,7 @@ export function CtaBanner() {
             within one business day.
           </p>
           <a
-            href="#contact"
+            href="/contact"
             className="mt-8 inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-sky-400 text-navy-950 font-semibold hover:bg-sky-300 transition-all hover:scale-[1.03]"
           >
             Get a free quote

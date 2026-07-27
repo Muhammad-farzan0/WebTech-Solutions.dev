@@ -22,7 +22,7 @@ export const services = [
     tag: "ai",
     title: "AI Integration & Design",
     description:
-      "AI-assisted features, Firebase pipelines, and prompt-engineered product visuals that make a site look and work premium.",
+      "AI-assisted features and prompt-engineered product visuals that make a site look and work premium.",
   },
 ];
 
@@ -171,6 +171,8 @@ export const process = [
 ];
 
 // ─── Featured projects for the home page teaser ────────────────────────────
+// `image` paths are local — drop matching files into public/images/work/
+// (see IMAGE-SOURCING.md for exactly what to download and where from).
 export const portfolio = [
   {
     name: "DailyNote",
@@ -179,6 +181,7 @@ export const portfolio = [
     result:
       "Real-time collaborative boards with smart timers, AI descriptions, and analytics dashboards.",
     link: "https://daily-note-liard.vercel.app",
+    image: "/images/work/dailynote.jpg",
   },
   {
     name: "SofaScene",
@@ -186,6 +189,7 @@ export const portfolio = [
     stack: ["WordPress", "WooCommerce", "SEO"],
     result:
       "On-page & off-page SEO drove exceptional organic sales growth for a UK furniture retailer.",
+    image: "/images/work/sofascene.jpg",
   },
   {
     name: "BRAVE Gym",
@@ -194,6 +198,7 @@ export const portfolio = [
     result:
       "Pakistan's first functional-training & combat-sports gym, with a site built to match the brand's energy.",
     link: "https://the-brave-gym.vercel.app/",
+    image: "/images/work/brave-gym.jpg",
   },
   {
     name: "Apricus Technical Solutions",
@@ -201,6 +206,7 @@ export const portfolio = [
     stack: ["WordPress", "Custom Design"],
     result:
       "A professional site highlighting premium supply-sourcing and engineering services.",
+    image: "/images/work/apricus.jpg",
   },
 ];
 
@@ -247,6 +253,7 @@ export const projectCategories = [
         name: "SofaScene",
         tag: "Furniture Retail, UK",
         stack: ["WordPress", "WooCommerce", "SEO"],
+        link: "https://www.sofascene.co.uk/",
         description:
           "A fully functional e-commerce platform for a UK furniture retailer, later optimized with on-page and off-page SEO — driving exceptional sales growth through improved organic traffic and search rankings.",
       },
@@ -254,6 +261,7 @@ export const projectCategories = [
         name: "Sofas n Beds",
         tag: "Furniture Retail, UK",
         stack: ["WordPress", "WooCommerce"],
+        link: "https://sofasnbeds.co.uk/",
         description:
           "Design and launch of an e-commerce website for a UK-based furniture retailer, built around a clean catalog structure and conversion-focused layout.",
       },
@@ -269,15 +277,17 @@ export const projectCategories = [
         name: "Apricus Technical Solutions",
         tag: "Supply Sourcing & Engineering Consultancy",
         stack: ["WordPress", "Custom Design"],
+        link: "https://www.apricus-tek.com/",
         description:
           "A professional corporate website highlighting premium supply-sourcing and engineering consultancy services.",
       },
       {
         name: "Alifah Enterprise",
-        tag: "Electronics Supplier, Singapore",
+        tag: "Electronics Supplier, Dubai",
         stack: ["WordPress", "Custom Design"],
+        link: "https://www.alif-ent.com/",
         description:
-          "A sleek, efficient website for a Singapore-based supplier of electronic components, projectors, and IP cameras.",
+          "A sleek, efficient website for a Dubai-based supplier of electronic components, projectors, and IP cameras.",
       },
     ],
   },
@@ -384,7 +394,7 @@ export const testimonials = [
 ];
 
 export const stats = [
-  { value: "15+", label: "Websites & apps shipped" },
+  { value: "15+", label: "Websites shipped" },
   { value: "5", label: "Fitness brands launched" },
   { value: "MERN", label: "Full-stack, end to end" },
   { value: "<1s", label: "Median load time" },

@@ -21,9 +21,9 @@ export function WhatsAppButton() {
         aria-label="Chat with WebTech Solutions on WhatsApp"
         className="group flex items-center gap-2 rounded-full bg-[#25D366] pl-4 pr-5 py-3.5 text-white shadow-lg shadow-[#25D366]/30 hover:scale-[1.04] transition-transform"
       >
-        <MessageCircle size={20} className="shrink-0" />
+        <MessageCircle size={10} className="shrink-0" />
         <span className="hidden sm:inline text-sm font-semibold">
-          Chat on WhatsApp
+          WhatsApp
         </span>
       </a>
       <button

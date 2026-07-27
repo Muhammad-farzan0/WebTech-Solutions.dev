@@ -7,12 +7,12 @@ export const faqs = [
   {
     question: "How long does a typical project take?",
     answer:
-      "A marketing or business site usually takes 2–4 weeks. Web apps with custom backends, dashboards, or e-commerce builds run 4–10 weeks depending on complexity. You'll get a specific timeline in the quote, and weekly progress updates once we start.",
+      "A marketing or business site usually takes 1–2 weeks. Web apps with custom backends, dashboards, or e-commerce builds run 3–5 weeks depending on complexity. You'll get a specific timeline in the quote, and weekly progress updates once we start.",
   },
   {
     question: "Do you work with clients outside Pakistan?",
     answer:
-      "Yes — we've shipped e-commerce sites for UK retailers and a corporate site for a Singapore-based supplier, alongside local Pakistani clients. Time zones aren't a blocker; we run async updates and schedule calls that work for you.",
+      "Yes — we've shipped e-commerce sites for UK retailers and a corporate site for a Dubai-based supplier, alongside local Pakistani clients. Time zones aren't a blocker; we run async updates and schedule calls that work for you.",
   },
   {
     question: "What's your payment structure?",

@@ -26,7 +26,7 @@ export function Certifications() {
                   {cert.title}
                 </h3>
                 <p className="mt-1 text-sm text-navy-900/55 dark:text-paper-50/55">
-                  {cert.issuer}
+                  {cert.issuer} - {cert.year}
                 </p>
               </div>
             </Reveal>

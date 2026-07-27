@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "./Reveal";
 import { portfolio } from "@/data/content";
 import { ArrowUpRight } from "lucide-react";
@@ -25,8 +26,20 @@ export function Portfolio() {
                 href={p.link ?? "/work"}
                 target={p.link ? "_blank" : undefined}
                 rel={p.link ? "noopener noreferrer" : undefined}
-                className="group relative block rounded-2xl border border-navy-900/10 dark:border-paper-50/10 bg-white dark:bg-ink-800 p-7 overflow-hidden hover:border-blue-500/50 dark:hover:border-sky-400/50 transition-colors duration-300"
+                className="group relative block rounded-2xl border border-navy-900/10 dark:border-paper-50/10 bg-white dark:bg-ink-800 overflow-hidden hover:border-blue-500/50 dark:hover:border-sky-400/50 transition-colors duration-300"
               >
+                {p.image && (
+                  <div className="relative h-44 w-full overflow-hidden">
+                    <Image
+                      src={p.image}
+                      alt={`${p.name} — ${p.tag}`}
+                      fill
+                      sizes="(min-width: 640px) 50vw, 100vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+                <div className="relative p-7">
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-blue-500/[0.06] to-transparent" />
                 <div className="relative flex items-start justify-between">
                   <div>
@@ -54,6 +67,7 @@ export function Portfolio() {
                       {s}
                     </span>
                   ))}
+                </div>
                 </div>
               </a>
             </Reveal>

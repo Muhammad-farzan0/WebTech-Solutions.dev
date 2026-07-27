@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Mail, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/data/site";
+import { locationPages } from "@/data/locations";
 
 const columns = [
   {
@@ -92,6 +93,23 @@ export function Footer() {
             </ul>
           </div>
         ))}
+      </div>
+
+      <div className="border-t border-paper-50/10">
+        <div className="mx-auto max-w-6xl px-6 py-6 flex flex-col sm:flex-row items-center gap-3 text-xs text-paper-50/50">
+          <span>Serving clients in:</span>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            {locationPages.map((loc) => (
+              <Link
+                key={loc.slug}
+                href={`/locations/${loc.slug}`}
+                className="hover:text-sky-400 transition-colors"
+              >
+                {loc.country}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="border-t border-paper-50/10">

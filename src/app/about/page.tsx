@@ -59,7 +59,7 @@ export default function AboutPage() {
               Rawalpindi, Pakistan. We work across the full stack — custom
               Next.js and MERN applications, WordPress builds, e-commerce
               storefronts, and the AI-assisted features that make a product
-              feel current — for clients in Pakistan, the UK, and Singapore.
+              feel current — for clients in Pakistan, the UK, and Dubai.
             </p>
           </Reveal>
 

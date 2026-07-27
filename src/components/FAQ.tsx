@@ -18,7 +18,7 @@ export function FAQ({
 
   return (
     <section id="faq" className={`py-24 md:py-32 border-t border-navy-900/5 dark:border-paper-50/5 ${className}`}>
-      <div className="mx-auto max-w-3xl px-6">
+      <div className="mx-auto max-w-5xl px-6">
         <Reveal>
           <span className="font-mono text-xs text-blue-500 dark:text-sky-400">
             {eyebrow}

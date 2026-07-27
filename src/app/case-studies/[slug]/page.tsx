@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
@@ -24,6 +25,13 @@ export async function generateMetadata({
     title: `${study.name} Case Study — WebTech Solutions`,
     description: study.summary,
     alternates: { canonical: `/case-studies/${study.slug}` },
+    openGraph: study.image
+      ? {
+          title: `${study.name} Case Study`,
+          description: study.summary,
+          images: [{ url: study.image }],
+        }
+      : undefined,
   };
 }
 
@@ -94,6 +102,19 @@ export default async function CaseStudyPage({
                 Visit the live site
                 <ExternalLink size={13} />
               </a>
+            )}
+
+            {study.image && (
+              <div className="relative mt-8 h-64 sm:h-80 w-full overflow-hidden rounded-2xl border border-navy-900/10 dark:border-paper-50/10">
+                <Image
+                  src={study.image}
+                  alt={`${study.name} — ${study.heroTag}`}
+                  fill
+                  sizes="(min-width: 768px) 768px, 100vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
             )}
           </Reveal>
 

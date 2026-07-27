@@ -9,14 +9,18 @@ export interface CaseStudy {
   solution: string;
   result: string;
   heroTag: string;
+  image?: string;
 }
 
+// `image` paths are local — drop matching files into public/images/work/
+// (see IMAGE-SOURCING.md for exactly what to download and where from).
 export const caseStudies: CaseStudy[] = [
   {
     slug: "sofascene",
     name: "SofaScene",
     category: "E-commerce · SEO",
     heroTag: "Furniture Retail, UK",
+    image: "/images/work/sofascene.jpg",
     summary:
       "A UK furniture retailer's e-commerce store rebuilt for organic growth — from an underperforming storefront to a search-driven sales channel.",
     stack: ["WordPress", "WooCommerce", "Technical SEO", "On-page & Off-page SEO"],
@@ -36,6 +40,7 @@ export const caseStudies: CaseStudy[] = [
       "A full-stack task management platform with real-time collaboration, built and shipped entirely on free-tier infrastructure.",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://daily-note-liard.vercel.app",
+    image: "/images/work/dailynote.jpg",
     problem:
       "Teams needed a task board that updated live across users — without the overhead or cost of enterprise project-management tools, and without sacrificing features like time tracking or activity insight.",
     solution:
@@ -52,6 +57,7 @@ export const caseStudies: CaseStudy[] = [
       "A high-energy marketing site for Pakistan's first functional-training and combat-sports facility, built to match the brand's intensity.",
     stack: ["Next.js", "Tailwind CSS", "Framer Motion"],
     link: "https://the-brave-gym.vercel.app/",
+    image: "/images/work/brave-gym.jpg",
     problem:
       "BRAVE needed a site that didn't feel like a generic gym template — the brand's identity is built on intensity and functional training, and a soft corporate layout would have undersold it.",
     solution:

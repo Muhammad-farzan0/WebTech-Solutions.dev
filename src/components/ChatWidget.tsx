@@ -174,7 +174,7 @@ export function ChatWidget() {
       >
         {open ? <X size={20} /> : <MessageSquare size={20} />}
         <span className="hidden sm:inline text-sm font-semibold">
-          {open ? "Close" : "Ask us anything"}
+          {open ? "Close" : "Ask us"}
         </span>
       </button>
     </div>
