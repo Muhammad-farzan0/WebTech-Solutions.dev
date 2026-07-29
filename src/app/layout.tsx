@@ -12,6 +12,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ChatWidget } from "@/components/ChatWidget";
+import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://webtechsolutions.dev"),
@@ -63,9 +64,9 @@ const themeInitScript = `
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "WebTech Solutions",
-  url: "https://webtechsolutions.dev",
-  image: "https://webtechsolutions.dev/opengraph-image",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  image: `${siteConfig.url}/opengraph-image`,
   description:
     "Web development studio building Next.js products, custom WordPress builds, e-commerce, AI integration, and SEO for clients in Pakistan and abroad.",
   address: {
@@ -75,8 +76,11 @@ const jsonLd = {
     addressCountry: "PK",
   },
   areaServed: "Worldwide",
-  email: "muhammadfarzan58@gmail.com",
-  sameAs: [],
+  email: siteConfig.email,
+  telephone: siteConfig.phoneDisplay,
+  // Add real business social profile URLs to siteConfig.socialProfiles (src/data/site.ts)
+  // as you create/confirm them — Google uses this to connect the profiles to this entity.
+  sameAs: siteConfig.socialProfiles,
   serviceType: [
     "Web Development",
     "WordPress Development",

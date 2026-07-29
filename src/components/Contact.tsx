@@ -132,7 +132,7 @@ export function Contact() {
             <div className="rounded-2xl border border-navy-900/10 dark:border-paper-50/10 overflow-hidden h-64 lg:h-auto lg:flex-1">
               <iframe
                 title="WebTech Solutions location"
-                src="https://www.google.com/maps?q=Islamabad,Pakistan&output=embed"
+                src="https://www.google.com/maps?q=Rawalpindi,Punjab,Pakistan&output=embed"
                 className="w-full h-full min-h-[260px] grayscale-[40%] dark:invert dark:hue-rotate-180"
                 loading="lazy"
               />
