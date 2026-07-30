@@ -67,6 +67,7 @@ const jsonLd = {
   name: siteConfig.name,
   url: siteConfig.url,
   image: `${siteConfig.url}/opengraph-image`,
+  logo: `${siteConfig.url}/images/icon.png`,
   description:
     "Web development studio building Next.js products, custom WordPress builds, e-commerce, AI integration, and SEO for clients in Pakistan and abroad.",
   address: {
